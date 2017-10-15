@@ -1,0 +1,103 @@
+nav {
+  background-color: #bfbfbf;
+  padding: 5px 15px;
+  height:45px;
+  text-align:right;
+}
+
+html{
+  font-size: 25px;
+}
+
+html:hover{
+  cursor: default;
+}
+
+ul{
+  margin: 0px;
+}
+
+nav li {
+  display:inline-block;
+  padding:10px 0px;
+}
+
+footer{
+  /*position: absolute;*/
+  bottom: 8px;
+  background-color:#bfbfbf;
+  padding: 10px;
+  text-align: center;
+}
+
+.text{
+  margin: 5px 10px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  padding:10px 15px;
+}
+
+a:hover, a:focus{
+  color: #fff;
+  background-color: #000;
+}
+
+.drophold {
+  display:none;
+  background-color:#cccccc;
+  position: absolute;
+  z-index: 1;
+}
+
+.drophold a {
+  display:block;
+  text-align: left;
+  padding:10px 15px;
+}
+
+.dropbtn:hover .drophold {
+  display: block;
+}
+
+#footLink:hover{
+  background-color: #bfbfbf;
+  color: #fff;
+}
+
+::selection{
+  background-color: #000;
+  color:#fff;
+}
+
+@media screen and (max-width: 435px) {
+  nav {
+    background-color: #bfbfbf;
+    display: table-caption;
+    margin: 5px;
+    height:150px;
+  }
+  li {
+    width: 100%;
+  }
+  .dropbtn:hover .drophold {
+    display: inline-block;
+    transform: translateY(-38px);
+  }
+  .text{
+    margin: 0px 10px;
+  }
+  nav li {
+  width: max-content;
+  float: left;
+  margin: 0px 2px;
+}
+
+@media screen and (max-width: 320px) {
+  html{
+    width:100%;
+  }
+}
